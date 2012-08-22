@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('proxima-nova.otf');
+}
+body {
+  font-size: 500%;
+  font-family: 'Proxima Nova', 'ProximaNova', 'Arial Narrow', Arial, Helvetica, sans-serif;
+  text-align: center;
+  letter-spacing: 0.15em;
+}
+.feedhenry-logo {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  border-radius: 50% 0 50% 0;
+  background-color: #e02d01;
+  vertical-align: middle;
+}
+.feedhenry-logo .inner {
+  position: relative;
+  margin: 0.4em;
+  width: 1.2em;
+  height: 1.2em;
+  background-color: #fff;
+  border-radius: inherit;
+}
+.feedhenry-logo .inner:before,
+.feedhenry-logo .inner:after {
+  content: "";
+  position: absolute;
+  margin-left: -0.16em;
+  left: 50%;
+  width: 0.38em;
+  background-color: #E02D01;
+  -webkit-transform: skew(-20deg) rotate(-20deg);
+     -moz-transform: skew(-20deg) rotate(-20deg);
+      -ms-transform: skew(-20deg) rotate(-20deg);
+       -o-transform: skew(-20deg) rotate(-20deg);
+          transform: skew(-20deg) rotate(-20deg);
+}
+.feedhenry-logo .inner:after {
+  top: -0.1em;
+  height: 0.59em;
+  border-radius: 0.3em 0 0 0;
+}
+.feedhenry-logo .inner:before {
+  bottom: -0.15em;
+  height: 0.95em;
+  border-radius: 0.5em 0 0.5em 0 / 0.7em 0 0.7em 0;
+}
