@@ -1,34 +1,40 @@
 @font-face {
   font-family: 'Proxima Nova';
-  src: url('proxima-nova.otf');
+  src: url('../fonts/proxima-nova-bold.otf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../fonts/proxima-nova.otf');
+  font-weight: normal;
 }
 body {
-  font-size: 500%;
-  font-family: 'Proxima Nova', 'ProximaNova', 'Arial Narrow', Arial, Helvetica, sans-serif;
   text-align: center;
-  letter-spacing: 0.15em;
+  font-size: 200%;
 }
 .feedhenry-logo {
-  display: inline-block;
-  width: 2em;
-  height: 2em;
-  border-radius: 50% 0 50% 0;
-  background-color: #e02d01;
-  vertical-align: middle;
+  font-family: 'Proxima Nova', 'ProximaNova', 'Arial Narrow', Arial, Helvetica, sans-serif;
+  letter-spacing: 0.15em;
+  font-weight: bold;
 }
-.feedhenry-logo .inner {
+.feedhenry-logo span {
+  margin-left: 0.3em;
+}
+.feedhenry-logo .icon {
   position: relative;
-  margin: 0.4em;
+  display: inline-block;
+  vertical-align: middle;
   width: 1.2em;
   height: 1.2em;
   background-color: #fff;
-  border-radius: inherit;
+  border-radius: 50% 0 50% 0;
+  border: 0.4em solid #e02d01;
 }
-.feedhenry-logo .inner:before,
-.feedhenry-logo .inner:after {
+.feedhenry-logo .icon:before,
+.feedhenry-logo .icon:after {
   content: "";
   position: absolute;
-  margin-left: -0.16em;
+  margin-left: -0.17em;
   left: 50%;
   width: 0.38em;
   background-color: #E02D01;
@@ -38,12 +44,12 @@ body {
        -o-transform: skewX(-20deg) rotate(-20deg);
           transform: skewX(-20deg) rotate(-20deg);
 }
-.feedhenry-logo .inner:after {
+.feedhenry-logo .icon:after {
   top: -0.1em;
   height: 0.59em;
   border-radius: 0.3em 0 0 0;
 }
-.feedhenry-logo .inner:before {
+.feedhenry-logo .icon:before {
   bottom: -0.15em;
   height: 0.95em;
   border-radius: 0.5em 0 0.5em 0 / 0.7em 0 0.7em 0;
